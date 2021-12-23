@@ -1,11 +1,12 @@
 import InAppLink from "./InAppLink";
+import { MenuAlt1Icon } from "@heroicons/react/solid";
 
 const Navbar = ({}) => {
   const toggleSidebar = () => {
     console.log("menu pressed");
   };
   return (
-    <div className="flex h-16 justify-between items-center bg-black text-white sticky top-0 p-4">
+    <header className="flex h-16 justify-between items-center bg-black text-white top-0 p-4">
       <InAppLink href="/">Home</InAppLink>
       <div className="flex items-center">
         <InAppLink
@@ -20,9 +21,11 @@ const Navbar = ({}) => {
         >
           Sell
         </InAppLink>
-        <button onClick={toggleSidebar}>Menu</button>
+        <button onClick={toggleSidebar}>
+          <MenuAlt1Icon className="h-10 w-10 hover:bg-white p-2 rounded-md transition hover:text-black" />
+        </button>
       </div>
-    </div>
+    </header>
   );
 };
 
