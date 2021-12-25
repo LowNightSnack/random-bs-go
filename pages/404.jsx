@@ -13,7 +13,7 @@ const Error404 = () => {
           Error 404
         </h1>
         <div className="mb-3 md:mb-4 text-xl md:text-3xl">
-          We can't find what you are looking for
+          We can&apos;t find what you are looking for
         </div>
         <p className="text-3xl md:text-5xl mb-3 md:mb-4">¯\_(ツ)_/¯</p>
         <button
